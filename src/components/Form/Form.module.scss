@@ -10,10 +10,12 @@
   background-color: #FFFFFF;
 
   width: 35%;
-}
 
-.form__title {
+
+&__title {
   margin-top: 3rem;
+
+  font-family: 'Poppins', sans-serif;
 
   text-align: center;
 }
@@ -77,4 +79,5 @@
 
     transition: 0.2s;
   }
+}
 }

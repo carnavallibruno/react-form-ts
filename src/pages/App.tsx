@@ -1,7 +1,6 @@
 import React from 'react';
-import '../App.css';
+import 'normalize.css';
 import Form from '../components/Form'
-import style from './App.module.scss'
 
 function App() {
   return (

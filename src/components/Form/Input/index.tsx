@@ -15,35 +15,35 @@ interface FormProps {
   option: string
 }
 
-export default function Input( { name, age, label, type, placeholder, occupation, setName, setAge, setOccupation, setHeight, option }: FormProps ) {
-  return(
+export default function Input({ name, age, label, type, placeholder, occupation, setName, setAge, setOccupation, setHeight, option }: FormProps) {
+  return (
     <>
-    <div className={style.form__input}>
-      <label>{label}</label>
-      <input
-        type={type}
-        placeholder={placeholder}
-        onChange={ e => {
-          switch(option) {
-            case "name":
-              setName?.(e.target.value);
-              break;
+      <div className={style.form__input}>
+        <label>{label}</label>
+        <input
+          type={type}
+          placeholder={placeholder}
+          onChange={e => {
+            switch (option) {
+              case "name":
+                setName?.(e.target.value);
+                break;
 
-            case "age":
-              setAge?.(e.target.value);
-              break;
-              
-            case "occupation":
-              setOccupation?.(e.target.value) 
-              break;   
-              
-            case "height":
-              setHeight?.(e.target.value) 
-              break; 
-          }
-        }}
-      />
-    </div>
+              case "age":
+                setAge?.(e.target.value);
+                break;
+
+              case "occupation":
+                setOccupation?.(e.target.value)
+                break;
+
+              case "height":
+                setHeight?.(e.target.value)
+                break;
+            }
+          }}
+        />
+      </div>
 
     </>
   )

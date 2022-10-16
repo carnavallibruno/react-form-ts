@@ -1,11 +1,11 @@
-interface fodasse {
+interface ListProps {
   name: string,
   age: string,
   occupation: string,
   height: string
 }
 
-export default function List ({ name, age, occupation, height }: fodasse) {
+export default function List({ name, age, occupation, height }: ListProps) {
   return (
     <table>
       <thead>
@@ -18,11 +18,11 @@ export default function List ({ name, age, occupation, height }: fodasse) {
       </thead>
       <tbody>
         <tr>
-            <th>{name}</th>
-            <th>{age}</th>
-            <th>{occupation}</th>
-            <th>{height}</th>
-          </tr>
+          <th>{name}</th>
+          <th>{age}</th>
+          <th>{occupation}</th>
+          <th>{height}</th>
+        </tr>
       </tbody>
     </table>
   )
